@@ -13,9 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up GitHub CLI
-      uses: cli/cli@v3
-
     - name: Read current version
       id: get_version
       run: |
@@ -23,8 +20,13 @@ jobs:
         echo "version=$VERSION" >> $GITHUB_OUTPUT
 
     - name: Create GitHub Release
-      run: |
-        gh release create ${{ steps.get_version.outputs.version }} --title "Release ${{ steps.get_version.outputs.version }}" --notes "Automated release."
+      uses: actions/create-release@v1
+      with:
+        tag_name: ${{ steps.get_version.outputs.version }}
+        release_name: Release ${{ steps.get_version.outputs.version }}
+        body: Automated release.
+        draft: false
+        prerelease: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,17 +34,16 @@ jobs:
       id: bump_version
       run: |
         VERSION=$(cat VERSION)
-        # Split version
         IFS='.' read -r MAJOR MINOR PATCH <<< "$VERSION"
         PATCH=$((PATCH + 1))
         NEW_VERSION="$MAJOR.$MINOR.$PATCH"
         echo $NEW_VERSION > VERSION
-        echo "New version: $NEW_VERSION"
+        echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
 
-    - name: Commit new version
+    - name: Commit and push new version
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add VERSION
-        git commit -m "Bump version to $NEW_VERSION"
+        git commit -m "Bump version to ${{ steps.bump_version.outputs.new_version }}"
         git push origin main
